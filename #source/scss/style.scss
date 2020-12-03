@@ -28,9 +28,71 @@ $fontfamily: "MuseoModerno";
     .aside-icon-3 {
     }
 }
+// =============================================================================================================================================
+
+.common-row {
+    display: flex;
+    height: 260px;
+
+    // .common-row__text
+
+    &__text {
+        font-size: 32px;
+        line-height: 48px;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    // .common-row__declare
+
+    &__declare {
+        max-width: 335px;
+        opacity: 0.2;
+        font-size: 20px;
+        letter-spacing: 8px;
+        line-height: 32px;
+        text-transform: uppercase;
+        border-left: 3px solid $blue;
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 0px 80px;
+    }
+}
+// =============================================================================================================================================
+
+.read {
+    display: inline-block;
+    color: $blue;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    position: relative;
+    &:before {
+        content: "";
+        width: 80px;
+        height: 1px;
+        background-color: $blue;
+        right: -140px;
+        top: 9px;
+        position: absolute;
+    }
+    &:after {
+        content: "";
+        width: 385px;
+        height: 1px;
+        background-color: $blue;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+    }
+}
 
 // =============================================================================================================================================
 .promo {
+    margin: 0px 0px 160px 0px;
     &__burger-inner {
         display: flex;
         flex-direction: column;
@@ -132,9 +194,9 @@ $fontfamily: "MuseoModerno";
         overflow: hidden;
         padding: 290px 0px 290px 240px;
     }
-     // .promo__content
+    // .promo__content
 
-     &__content {
+    &__content {
         color: #ffffff;
     }
 
@@ -172,13 +234,185 @@ $fontfamily: "MuseoModerno";
 
     &__aside-icon-3 {
     }
+}
 
-   
+// =============================================================================================================================================
+.create {
+    margin: 0px 0px 200px 0px;
+    // .create__inner
+
+    &__inner {
+        position: relative;
+        padding: 0px 150px;
+    }
+
+    // .create__aside-icons
+
+    &__aside-icons {
+        svg {
+            fill: #000;
+        }
+    }
+
+    // .create__aside-icon-1
+
+    &__aside-icon-1 {
+    }
+
+    // .create__aside-icon-2
+
+    &__aside-icon-2 {
+    }
+
+    // .create__aside-icon-3
+
+    &__aside-icon-3 {
+    }
+
+    // .create__common-row
+
+    &__common-row {
+        margin: 0px 0px 120px 0px;
+    }
+
+    // .create__row
+
+    &__row {
+        display: flex;
+        margin: 0px -50px 120px;
+    }
+
+    // .create__row-item
+
+    &__row-item {
+        padding: 0px 50px;
+        width: 33.333%;
+    }
+
+    // .create__row-item-title
+
+    &__row-item-title {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    // .create__row-item-text
+
+    &__row-item-text {
+        opacity: 0.5;
+        color: #000000;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    // .create__read
+
+    &__read {
+    }
 }
 
 // =============================================================================================================================================
 
-// =============================================================================================================================================
+.magnus {
+    margin: 0px 0px 100px 0px;
+    // .magnus__inner
+
+    &__inner {
+        position: relative;
+        max-height: 950px;
+        overflow: hidden;
+    }
+
+    // .magnus__aside-icons
+
+    &__aside-icons {
+        z-index: 20;
+        svg {
+            fill: #fff;
+        }
+    }
+
+    // .magnus__aside-icon-1
+
+    &__aside-icon-1 {
+    }
+
+    // .magnus__aside-icon-2
+
+    &__aside-icon-2 {
+    }
+
+    // .magnus__aside-icon-3
+
+    &__aside-icon-3 {
+    }
+
+    // .magnus__bg
+
+    &__bg {
+        width: 1360px;
+        height: 870px;
+        padding: 125px 70px 125px 720px;
+        background-image: url(/img/magnus/1.jpg);
+        background-repeat: no-repeat;
+        background-color: $black2;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__under {
+        width: 1360px;
+        height: 870px;
+        background-color: $grey;
+        transform: translate(80px, -790px);
+    }
+
+    // .magnus__content
+
+    &__content {
+        color: #ffffff;
+    }
+
+    // .magnus__title
+
+    &__title {
+        font-size: 32px;
+        line-height: 48px;
+        margin: 0px 0px 60px 0px;
+    }
+
+    // .magnus__text
+
+    &__text {
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0px 0px 45px 0px;
+    }
+    &__name-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .magnus__name
+
+    &__name {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 900;
+    }
+
+    // .magnus__subname
+
+    &__subname {
+        font-weight: 500;
+        margin: 0px 0px 100px 0px;
+    }
+
+    // .magnus__read
+
+    &__read {
+    }
+}
 
 // =============================================================================================================================================
 
