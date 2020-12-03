@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;500;700;900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -387,7 +388,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
-  font-family: "";
+  font-family: "MuseoModerno";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -406,7 +407,7 @@ body.lock {
 input,
 button,
 textarea {
-  font-family: "";
+  font-family: "MuseoModerno";
 }
 
 input::-ms-clear {
@@ -447,6 +448,12 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+.container {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .slick-slider {
@@ -537,4 +544,168 @@ h6 {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.aside-icons {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.aside-icons .aside-icon {
+  width: 80px;
+  height: 80px;
+}
+.aside-icons .aside-icon-2 {
+  margin: 80px 0px;
+}
+.promo__burger-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.promo__burger {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-color: #000;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.promo__burger:hover .promo__burger-line:nth-child(1) {
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-name: burger1;
+          animation-name: burger1;
+}
+@-webkit-keyframes burger1 {
+  0% {
+    width: 24px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 24px;
+  }
+}
+@keyframes burger1 {
+  0% {
+    width: 24px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 24px;
+  }
+}
+.promo__burger:hover .promo__burger-line:nth-child(2) {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: burger2;
+          animation-name: burger2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes burger2 {
+  0% {
+    width: 15px;
+  }
+  50% {
+    width: 70px;
+  }
+  100% {
+    width: 15px;
+  }
+}
+@keyframes burger2 {
+  0% {
+    width: 15px;
+  }
+  50% {
+    width: 70px;
+  }
+  100% {
+    width: 15px;
+  }
+}
+.promo__burger:hover .promo__burger-line:nth-child(3) {
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-name: burger3;
+          animation-name: burger3;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes burger3 {
+  0% {
+    width: 24px;
+  }
+  50% {
+    width: 50px;
+  }
+  100% {
+    width: 24px;
+  }
+}
+@keyframes burger3 {
+  0% {
+    width: 24px;
+  }
+  50% {
+    width: 50px;
+  }
+  100% {
+    width: 24px;
+  }
+}
+.promo__burger-line {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+}
+.promo__burger-line:nth-child(2) {
+  margin: 11px 0px;
+  width: 15px;
+}
+.promo__inner {
+  background-color: #000;
+  height: 880px;
+  position: relative;
+}
+.promo__bg {
+  height: 800px;
+  background-image: url(/img/promo/1.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 290px 0px 290px 240px;
+}
+.promo__content {
+  color: #ffffff;
+}
+.promo__title {
+  font-size: 64px;
+  line-height: 72px;
+  margin: 0px 0px 25px 0px;
+}
+.promo__text {
+  font-size: 32px;
+  line-height: 48px;
 }

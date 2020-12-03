@@ -1,15 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;500;700;900&display=swap");
 // ШРИФТ ПО УМОЛЧАНИЮ=============================================================================================================================
-$fontfamily: "";
+$fontfamily: "MuseoModerno";
 // =============================================================================================================================================
 @import "_normalize.scss";
 @import "_null.scss";
+@import "_global.scss";
 @import "_slick.scss";
-@import "_fonts.scss";
-
-
 
 // =============================================================================================================================================
-  
+
+.aside-icons {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .aside-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .aside-icon-1 {
+    }
+    .aside-icon-2 {
+        margin: 80px 0px;
+    }
+    .aside-icon-3 {
+    }
+}
+
+// =============================================================================================================================================
+.promo {
+    &__burger-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    // .promo__burger
+
+    &__burger {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        background-color: #000;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            .promo__burger-line {
+                &:nth-child(1) {
+                    animation-duration: 0.6s;
+                    animation-name: burger1;
+                    @keyframes burger1 {
+                        0% {
+                            width: 24px;
+                        }
+                        50% {
+                            width: 40px;
+                        }
+                        100% {
+                            width: 24px;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    animation-duration: 1s;
+                    animation-name: burger2;
+                    animation-direction: alternate;
+                    @keyframes burger2 {
+                        0% {
+                            width: 15px;
+                        }
+                        50% {
+                            width: 70px;
+                        }
+                        100% {
+                            width: 15px;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    animation-duration: 1.2s;
+                    animation-name: burger3;
+                    animation-direction: alternate;
+                    @keyframes burger3 {
+                        0% {
+                            width: 24px;
+                        }
+                        50% {
+                            width: 50px;
+                        }
+                        100% {
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        // .promo__buger-line
+
+        &-line {
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+
+            &:nth-child(1) {
+            }
+            &:nth-child(2) {
+                margin: 11px 0px;
+                width: 15px;
+            }
+            &:nth-child(3) {
+            }
+        }
+    }
+    // .promo__inner
+
+    &__inner {
+        background-color: #000;
+        height: 880px;
+        position: relative;
+    }
+    // .promo__bg
+
+    &__bg {
+        height: 800px;
+        background-image: url(/img/promo/1.jpg);
+        background-repeat: no-repeat;
+        overflow: hidden;
+        padding: 290px 0px 290px 240px;
+    }
+     // .promo__content
+
+     &__content {
+        color: #ffffff;
+    }
+
+    // .promo__title
+
+    &__title {
+        font-size: 64px;
+        line-height: 72px;
+        margin: 0px 0px 25px 0px;
+    }
+
+    // .promo__text
+
+    &__text {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    // .promo__aside-icons
+
+    &__aside-icons {
+    }
+
+    // .promo__aside-icon-1
+
+    &__aside-icon-1 {
+    }
+
+    // .promo__aside-icon-2
+
+    &__aside-icon-2 {
+    }
+
+    // .promo__aside-icon-3
+
+    &__aside-icon-3 {
+    }
+
+   
+}
+
 // =============================================================================================================================================
 
 // =============================================================================================================================================
