@@ -95,7 +95,7 @@ $fontfamily: "MuseoModerno";
 
 // =============================================================================================================================================
 .promo {
-    margin: 0px 0px 160px 0px;
+    // margin: 0px 0px 160px 0px;
     &__burger-inner {
         display: flex;
         flex-direction: column;
@@ -241,7 +241,7 @@ $fontfamily: "MuseoModerno";
 
 // =============================================================================================================================================
 .create {
-    margin: 0px 0px 200px 0px;
+    // margin: 0px 0px 200px 0px;
     // .create__inner
 
     &__inner {
@@ -318,7 +318,7 @@ $fontfamily: "MuseoModerno";
 // =============================================================================================================================================
 
 .magnus {
-    margin: 0px 0px 100px 0px;
+    // margin: 0px 0px 100px 0px;
     // .magnus__inner
 
     &__inner {
@@ -425,7 +425,7 @@ $fontfamily: "MuseoModerno";
     &__inner {
         position: relative;
         padding: 0px 150px;
-        margin: 0px 0px 150px 0px;
+        // margin: 0px 0px 150px 0px;
     }
 
     // .standart__common-row
@@ -477,7 +477,7 @@ $fontfamily: "MuseoModerno";
 
 // =============================================================================================================================================
 .innovation {
-    margin: 0px 0px 100px 0px;
+    // margin: 0px 0px 100px 0px;
     // .innovation__inner
 
     &__inner {
@@ -565,7 +565,7 @@ $fontfamily: "MuseoModerno";
 
 // =============================================================================================================================================
 .more {
-    margin: 0px 0px 140px 0px;
+    // margin: 0px 0px 140px 0px;
     // .more__inner
 
     &__inner {
@@ -698,7 +698,7 @@ $fontfamily: "MuseoModerno";
     &__item {
         width: 33.333%;
         height: 480px;
-        &:nth-child(1){
+        &:nth-child(1) {
             padding: 130px 140px 100px 150px;
             display: flex;
             flex-direction: column;
@@ -725,10 +725,10 @@ $fontfamily: "MuseoModerno";
     // .new__read
 
     &__read {
-        &:before{
+        &:before {
             right: -25px;
         }
-        &:after{
+        &:after {
             width: 215px;
         }
     }
@@ -738,10 +738,9 @@ $fontfamily: "MuseoModerno";
     &__item-img {
         position: relative;
         overflow: hidden;
-        &:hover{
-            .new__item-popup{
+        &:hover {
+            .new__item-popup {
                 transform: translateY(0);
-
             }
         }
     }
@@ -761,9 +760,9 @@ $fontfamily: "MuseoModerno";
         justify-content: space-between;
         color: #fff;
         transform: translateY(-120%);
-        transition: all  .5s;
-        .new__item-btn{
-            &:hover{
+        transition: all 0.5s;
+        .new__item-btn {
+            &:hover {
                 background-color: #fff;
                 border: 1px solid #fff;
             }
@@ -779,9 +778,9 @@ $fontfamily: "MuseoModerno";
         line-height: 28px;
         padding: 6px 48px;
         background-color: #000;
-        transition: all .3s;
+        transition: all 0.3s;
         border: 1px solid #000;
-        &:hover{
+        &:hover {
             color: #000;
             background-color: transparent;
             border: 1px solid #000;
@@ -802,10 +801,83 @@ $fontfamily: "MuseoModerno";
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
 }
 
 // =============================================================================================================================================
+
+.footer {
+
+    // .footer__inner
+
+    &__inner {
+        display: flex;
+    }
+
+    // .footer__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        flex: 1 1 auto;
+        padding: 80px;
+    }
+
+    // .footer__title
+
+    &__title {
+        font-size: 40px;
+        font-weight: 900;
+        color: #fff;
+        margin: 0px 0px 30px 0px;
+    }
+
+    // .footer__row
+
+    &__row {
+        display: flex;
+    }
+
+    // .footer__column
+
+    &__column {
+        width: 33.333%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .footer__tip
+
+    &__tip {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0px 0px 15px 0px;
+        &:hover{
+                color: $grey;
+        }
+    }
+
+    // .footer__aside
+
+    &__aside {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $black1;
+    }
+
+    // .footer__aside-img
+
+    &__aside-img {
+        svg{
+            width: 100px;
+        }
+        
+    }
+}
 
 @import "_medias.scss";
